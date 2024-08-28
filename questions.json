@@ -1,0 +1,308 @@
+{
+    "cuidado_ambiental": [
+    {
+        "question": "¿Cuál de las siguientes prácticas ayuda a reducir la huella de carbono?",
+        "choices": ["Conducir todos los días", "Reciclar", "Usar productos desechables", "Comer carne en cada comida"],
+        "answer": "Reciclar"
+    },
+    {
+        "question": "¿Qué es la energía renovable?",
+        "choices": ["Energía que no se puede reutilizar", "Energía que proviene de fuentes naturales", "Energía que contamina el medio ambiente", "Energía generada por combustibles fósiles"],
+        "answer": "Energía que proviene de fuentes naturales"
+    },
+    {
+        "question": "¿Cuál es una de las principales causas del cambio climático?",
+        "choices": ["Uso de energías renovables", "Deforestación", "Reciclaje", "Agricultura sostenible"],
+        "answer": "Deforestación"
+    },
+    {
+        "question": "¿Qué es el efecto invernadero?",
+        "choices": ["El aumento de la temperatura en invierno", "La retención de calor en la atmósfera por gases", "El enfriamiento global", "El aumento de la biodiversidad"],
+        "answer": "La retención de calor en la atmósfera por gases"
+    },
+    {
+        "question": "¿Qué es la biodiversidad?",
+        "choices": ["La variedad de especies en un ecosistema", "La destrucción de hábitats", "El cambio climático", "La deforestación"],
+        "answer": "La variedad de especies en un ecosistema"
+    },
+    {
+        "question": "¿Cuál es el propósito de las áreas protegidas?",
+        "choices": ["Explotar recursos naturales", "Proteger la vida silvestre y sus hábitats", "Construir infraestructuras", "Expandir la agricultura"],
+        "answer": "Proteger la vida silvestre y sus hábitats"
+    },
+    {
+        "question": "¿Qué es el reciclaje?",
+        "choices": ["Desechar productos usados", "Transformar residuos en nuevos productos", "Incinerar basura", "Enterrar residuos en vertederos"],
+        "answer": "Transformar residuos en nuevos productos"
+    },
+    {
+        "question": "¿Cuál de las siguientes opciones no es un gas de efecto invernadero?",
+        "choices": ["Dióxido de carbono", "Metano", "Óxido nitroso", "Oxígeno"],
+        "answer": "Oxígeno"
+    },
+    {
+        "question": "¿Cuál es un beneficio de plantar árboles?",
+        "choices": ["Aumenta la contaminación", "Destruye hábitats", "Reduce el dióxido de carbono", "Consume más agua"],
+        "answer": "Reduce el dióxido de carbono"
+    },
+    {
+        "question": "¿Qué práctica ayuda a reducir el desperdicio de alimentos?",
+        "choices": ["Comprar más de lo necesario", "Planificar las comidas", "Tirar los sobrantes", "Usar alimentos en mal estado"],
+        "answer": "Planificar las comidas"
+    },
+    {
+        "question": "¿Qué es la compostaje?",
+        "choices": ["Quemar residuos", "Enterrar residuos", "Convertir residuos orgánicos en abono", "Desechar residuos en vertederos"],
+        "answer": "Convertir residuos orgánicos en abono"
+    },
+    {
+        "question": "¿Cuál es una manera de reducir la contaminación del aire?",
+        "choices": ["Usar más vehículos a gasolina", "Plantar árboles", "Construir más fábricas", "Quemar basura"],
+        "answer": "Plantar árboles"
+    },
+    {
+        "question": "¿Qué es la huella ecológica?",
+        "choices": ["El impacto ambiental de una persona o comunidad", "La cantidad de carbono en la atmósfera", "La superficie forestal global", "La biodiversidad en un área"],
+        "answer": "El impacto ambiental de una persona o comunidad"
+    },
+    {
+        "question": "¿Cuál es una forma efectiva de reducir el uso de plástico?",
+        "choices": ["Usar bolsas reutilizables", "Comprar productos empaquetados", "Tirar plástico en el océano", "Quemar plástico"],
+        "answer": "Usar bolsas reutilizables"
+    },
+    {
+        "question": "¿Qué es la capa de ozono?",
+        "choices": ["Una capa de nubes en la atmósfera", "Una capa de gases que regula la temperatura global", "Una capa de gases que protege la Tierra de la radiación ultravioleta", "Una capa de gases que provoca el smog"],
+        "answer": "Una capa de gases que protege la Tierra de la radiación ultravioleta"
+    },
+    {
+        "question": "¿Cuál es una consecuencia del cambio climático en los océanos?",
+        "choices": ["Aumento de la pesca sostenible", "Acidificación y aumento del nivel del mar", "Disminución de las especies marinas", "Mayor diversidad coralina"],
+        "answer": "Acidificación y aumento del nivel del mar"
+    },
+    {
+        "question": "¿Qué es la deforestación?",
+        "choices": ["El proceso de plantar árboles", "La tala y destrucción de bosques", "El mantenimiento de áreas verdes urbanas", "La creación de reservas naturales"],
+        "answer": "La tala y destrucción de bosques"
+    },
+    {
+        "question": "¿Cuál es un ejemplo de consumo responsable?",
+        "choices": ["Utilizar recursos sin límite", "Reducir, reutilizar y reciclar", "Desechar productos sin pensar", "Consumir productos de uso único"],
+        "answer": "Reducir, reutilizar y reciclar"
+    },
+    {
+        "question": "¿Qué son los combustibles fósiles?",
+        "choices": ["Energía generada por el sol", "Recursos energéticos renovables", "Recursos energéticos no renovables", "Energía obtenida del viento"],
+        "answer": "Recursos energéticos no renovables"
+    },
+    {
+        "question": "¿Qué es la sobreexplotación de recursos naturales?",
+        "choices": ["El uso sostenible de recursos", "El uso moderado de recursos naturales", "El uso excesivo de recursos sin considerar su regeneración", "El cuidado y mantenimiento de recursos naturales"],
+        "answer": "El uso excesivo de recursos sin considerar su regeneración"
+    }
+],
+    "manejo_de_animales_y_tierras": [
+    {
+        "question": "¿Cuál es la técnica de rotación de cultivos?",
+        "choices": ["Cultivar el mismo cultivo cada año", "Dejar la tierra sin cultivar", "Cultivar diferentes cultivos en la misma área en diferentes temporadas", "Usar pesticidas regularmente"],
+        "answer": "Cultivar diferentes cultivos en la misma área en diferentes temporadas"
+    },
+    {
+        "question": "¿Qué es el pastoreo controlado?",
+        "choices": ["Dejar a los animales pastar libremente", "Mover a los animales a diferentes áreas para pastar", "No permitir que los animales pasten", "Alimentar a los animales solo con alimentos procesados"],
+        "answer": "Mover a los animales a diferentes áreas para pastar"
+    },
+    {
+        "question": "¿Cuál es una práctica sostenible en la cría de animales?",
+        "choices": ["Sobrealimentar a los animales", "Usar antibióticos en exceso", "Mantener a los animales en condiciones de bienestar", "Desforestar áreas para pastoreo"],
+        "answer": "Mantener a los animales en condiciones de bienestar"
+    },
+    {
+        "question": "¿Qué es la agricultura regenerativa?",
+        "choices": ["Usar fertilizantes químicos", "Monocultivo intensivo", "Mejorar la salud del suelo y la biodiversidad", "Uso intensivo de agua"],
+        "answer": "Mejorar la salud del suelo y la biodiversidad"
+    },
+    {
+        "question": "¿Qué es el agrosilvicultura?",
+        "choices": ["La práctica de cultivar árboles y cultivos juntos", "Monocultivo intensivo", "Exclusivamente cría de ganado", "Desforestar para más tierras de cultivo"],
+        "answer": "La práctica de cultivar árboles y cultivos juntos"
+    },
+    {
+        "question": "¿Cuál es una ventaja del manejo integrado de plagas (MIP)?",
+        "choices": ["Mayor uso de pesticidas químicos", "Reducción del uso de pesticidas", "Aumento de plagas", "Contaminación del suelo y agua"],
+        "answer": "Reducción del uso de pesticidas"
+    },
+    {
+        "question": "¿Qué es la conservación del suelo?",
+        "choices": ["Aumentar la erosión", "Mejorar la fertilidad del suelo y reducir la erosión", "Desforestar para tierras de cultivo", "Usar pesticidas sin control"],
+        "answer": "Mejorar la fertilidad del suelo y reducir la erosión"
+    },
+    {
+        "question": "¿Cuál es una práctica de manejo sostenible de la tierra?",
+        "choices": ["Deforestación", "Monocultivo", "Rotación de cultivos", "Uso intensivo de fertilizantes químicos"],
+        "answer": "Rotación de cultivos"
+    },
+    {
+        "question": "¿Qué es la permacultura?",
+        "choices": ["Sistema de diseño agrícola sostenible", "Uso intensivo de pesticidas", "Monocultivo intensivo", "Deforestación para tierras agrícolas"],
+        "answer": "Sistema de diseño agrícola sostenible"
+    },
+    {
+        "question": "¿Cuál es una técnica para reducir la erosión del suelo?",
+        "choices": ["Cultivo en pendiente", "No arar la tierra", "Cultivo intensivo", "Monocultivo"],
+        "answer": "No arar la tierra"
+    },
+    {
+        "question": "¿Qué es la agricultura biodinámica?",
+        "choices": ["Uso de fertilizantes sintéticos", "Método de cultivo que incluye prácticas ecológicas y espirituales", "Monocultivo intensivo", "Uso intensivo de pesticidas"],
+        "answer": "Método de cultivo que incluye prácticas ecológicas y espirituales"
+    },
+    {
+        "question": "¿Qué es la agroecología?",
+        "choices": ["Monocultivo intensivo", "Práctica de agricultura que se basa en principios ecológicos y sociales", "Uso intensivo de fertilizantes químicos", "Deforestación para tierras de cultivo"],
+        "answer": "Práctica de agricultura que se basa en principios ecológicos y sociales"
+    },
+    {
+        "question": "¿Qué es el manejo de cuencas hidrográficas?",
+        "choices": ["Deforestación en áreas de cuencas", "Gestión sostenible de los recursos hídricos y del suelo en una cuenca", "Uso intensivo de pesticidas", "Desviar cursos de agua para riego"],
+        "answer": "Gestión sostenible de los recursos hídricos y del suelo en una cuenca"
+    },
+    {
+        "question": "¿Qué es la silvicultura sostenible?",
+        "choices": ["Cortar árboles sin replantar", "Reforestar áreas después de la tala", "Evitar el uso de madera", "Destruir hábitats naturales"],
+        "answer": "Reforestar áreas después de la tala"
+    },
+    {
+        "question": "¿Qué es el agrosilvicultura?",
+        "choices": ["La práctica de cultivar árboles y cultivos juntos", "Monocultivo intensivo", "Exclusivamente cría de ganado", "Desforestar para más tierras de cultivo"],
+        "answer": "La práctica de cultivar árboles y cultivos juntos"
+    },
+    {
+        "question": "¿Cuál es una ventaja del manejo integrado de plagas (MIP)?",
+        "choices": ["Mayor uso de pesticidas químicos", "Reducción del uso de pesticidas", "Aumento de plagas", "Contaminación del suelo y agua"],
+        "answer": "Reducción del uso de pesticidas"
+    },
+    {
+        "question": "¿Qué es la permacultura?",
+        "choices": ["Sistema de diseño agrícola sostenible", "Uso intensivo de pesticidas", "Monocultivo intensivo", "Deforestación para tierras agrícolas"],
+        "answer": "Sistema de diseño agrícola sostenible"
+    },
+    {
+        "question": "¿Qué es la acuicultura?",
+        "choices": ["Cultivo de plantas acuáticas", "Crianza y cultivo de organismos acuáticos", "Pesca en aguas profundas", "Destrucción de hábitats acuáticos"],
+        "answer": "Crianza y cultivo de organismos acuáticos"
+    },
+    {
+        "question": "¿Qué son las prácticas de manejo ambiental en acuicultura?",
+        "choices": ["Uso de redes de pesca de arrastre", "Monocultivo de especies de peces", "Reciclaje de aguas contaminadas", "Mantenimiento de la biodiversidad en la zona de cultivo"],
+        "answer": "Mantenimiento de la biodiversidad en la zona de cultivo"
+    },
+    {
+        "question": "¿Cuál es un método para controlar enfermedades en acuicultura?",
+        "choices": ["Aumentar la densidad de peces", "Uso de vacunas", "Uso de químicos tóxicos en el agua", "Alimentación con alimentos no balanceados"],
+        "answer": "Uso de vacunas"
+    }
+],
+    "ayuda_al_medio_ambiente": [
+    {
+        "question": "¿Cuál de las siguientes acciones ayuda a reducir el consumo de agua en casa?",
+        "choices": ["Dejar el grifo abierto mientras te lavas los dientes", "Tomar duchas largas todos los días", "Reparar los grifos que gotean", "Regar el jardín en las horas más calurosas del día"],
+        "answer": "Reparar los grifos que gotean"
+    },
+    {
+        "question": "¿Qué práctica ayuda a reducir el consumo de energía en el hogar?",
+        "choices": ["Dejar los aparatos electrónicos en modo de espera", "Utilizar bombillas incandescentes", "Apagar las luces al salir de una habitación", "Calentar la casa con estufas eléctricas"],
+        "answer": "Apagar las luces al salir de una habitación"
+    },
+    {
+        "question": "¿Qué es el reciclaje?",
+        "choices": ["Enterrar residuos en vertederos", "Transformar residuos en nuevos productos", "Quemar residuos para generar energía", "Llevar todos los residuos a la basura común"],
+        "answer": "Transformar residuos en nuevos productos"
+    },
+    {
+        "question": "¿Cómo se puede reducir el uso de plásticos de un solo uso?",
+        "choices": ["Usar bolsas reutilizables", "Comprar botellas de plástico constantemente", "Tirar plástico en la naturaleza", "Comprar productos empacados en plástico"],
+        "answer": "Usar bolsas reutilizables"
+    },
+    {
+        "question": "¿Qué es la huella de carbono?",
+        "choices": ["La marca que dejamos al caminar", "La cantidad de carbono que emitimos como individuos", "La cantidad de plástico que usamos", "La cantidad de papel que reciclamos"],
+        "answer": "La cantidad de carbono que emitimos como individuos"
+    },
+    {
+        "question": "¿Cuál de las siguientes acciones ayuda a conservar la biodiversidad?",
+        "choices": ["Cortar árboles sin replantar", "Plantar especies invasoras", "Crear jardines con plantas nativas", "Usar pesticidas sin control"],
+        "answer": "Crear jardines con plantas nativas"
+    },
+    {
+        "question": "¿Qué es el compostaje?",
+        "choices": ["Quemar residuos", "Enterrar residuos", "Convertir residuos orgánicos en abono", "Desechar residuos en vertederos"],
+        "answer": "Convertir residuos orgánicos en abono"
+    },
+    {
+        "question": "¿Cuál es una manera efectiva de reducir el consumo de agua en el hogar?",
+        "choices": ["Lavar el coche con manguera", "Dejar el grifo abierto mientras te afeitas", "Instalar dispositivos de bajo flujo en grifos y duchas", "Regar el jardín todos los días"],
+        "answer": "Instalar dispositivos de bajo flujo en grifos y duchas"
+    },
+    {
+        "question": "¿Qué es la energía renovable?",
+        "choices": ["Energía que proviene de fuentes no renovables", "Energía que contamina el medio ambiente", "Energía que se agota rápidamente", "Energía que proviene de fuentes naturales y se renueva constantemente"],
+        "answer": "Energía que proviene de fuentes naturales y se renueva constantemente"
+    },
+    {
+        "question": "¿Cuál es una práctica para reducir la contaminación del aire en el hogar?",
+        "choices": ["Quemar basura en el jardín", "Usar más vehículos a gasolina", "Utilizar estufas y calderas eficientes", "Dejar las ventanas abiertas todo el día"],
+        "answer": "Utilizar estufas y calderas eficientes"
+    },
+    {
+        "question": "¿Qué es la permacultura?",
+        "choices": ["Sistema de diseño agrícola sostenible", "Práctica de monocultivo intensivo", "Uso intensivo de pesticidas", "Deforestación para tierras agrícolas"],
+        "answer": "Sistema de diseño agrícola sostenible"
+    },
+    {
+        "question": "¿Cómo se puede contribuir a la reducción de residuos electrónicos?",
+        "choices": ["Comprar nuevos dispositivos cada año", "Reciclar dispositivos electrónicos viejos", "Arrojar dispositivos electrónicos a la basura común", "Usar dispositivos electrónicos sin apagarlos"],
+        "answer": "Reciclar dispositivos electrónicos viejos"
+    },
+    {
+        "question": "¿Qué es la eficiencia energética?",
+        "choices": ["Desperdiciar energía constantemente", "Usar más energía de la necesaria", "Utilizar menos energía para hacer lo mismo", "No preocuparse por el consumo de energía"],
+        "answer": "Utilizar menos energía para hacer lo mismo"
+    },
+    {
+        "question": "¿Qué es la gestión de residuos sólidos?",
+        "choices": ["Vertido de residuos en cuerpos de agua", "Reciclaje y tratamiento adecuado de residuos", "Quema de residuos al aire libre", "Acumulación de basura en espacios naturales"],
+        "answer": "Reciclaje y tratamiento adecuado de residuos"
+    },
+    {
+        "question": "¿Cuál es una práctica para conservar la energía en el hogar?",
+        "choices": ["Dejar las luces encendidas todo el día", "Cerrar las ventanas en verano para usar el aire acondicionado", "No aislar las puertas y ventanas", "Apagar los aparatos electrónicos cuando no se usan"],
+        "answer": "Apagar los aparatos electrónicos cuando no se usan"
+    },
+    {
+        "question": "¿Qué es la agricultura urbana?",
+        "choices": ["Cultivo en áreas rurales lejos de las ciudades", "Producción de alimentos en espacios urbanos como jardines y azoteas", "Uso intensivo de fertilizantes químicos", "Destrucción de áreas verdes en las ciudades"],
+        "answer": "Producción de alimentos en espacios urbanos como jardines y azoteas"
+    },
+    {
+        "question": "¿Cuál es una manera de reducir el uso de agua en el jardín?",
+        "choices": ["Regar el jardín en las horas más calurosas del día", "Instalar un sistema de riego por goteo", "Usar mangueras de alta presión", "Dejar los grifos goteando"],
+        "answer": "Instalar un sistema de riego por goteo"
+    },
+    {
+        "question": "¿Qué es la movilidad sostenible?",
+        "choices": ["Uso constante de automóviles viejos y contaminantes", "Utilización de transporte público y vehículos eléctricos", "Incremento del tráfico urbano", "Construcción de más carreteras"],
+        "answer": "Utilización de transporte público y vehículos eléctricos"
+    },
+    {
+        "question": "¿Qué es la reforestación urbana?",
+        "choices": ["Tala de árboles en ciudades para dar espacio a la construcción", "Plantación de árboles en áreas urbanas para mejorar la calidad del aire", "Uso intensivo de pesticidas en áreas urbanas", "Quema de hojas y ramas en calles urbanas"],
+        "answer": "Plantación de árboles en áreas urbanas para mejorar la calidad del aire"
+    },
+    {
+        "question": "¿Cómo se puede reducir la contaminación lumínica desde casa?",
+        "choices": ["Dejar las luces encendidas toda la noche", "Utilizar cortinas opacas durante el día", "Instalar luces LED en todos los espacios", "No apagar las luces al salir de una habitación"],
+        "answer": "Utilizar cortinas opacas durante el día"
+    }
+]
+}

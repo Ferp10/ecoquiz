@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="/about">Sobre Nosotros</a>
+                <a href="/login">Iniciar Sesión</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Registrate!!</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre completo" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Correo electronico" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Nombre de Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Contraseña" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">Registrarme</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>ECOQUIZ 2024</p>
+        <p>Todos los derechos reservados. ECOQUIZ TEAM.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('responsive');
+        });
+    </script>
+</body>
+</html>

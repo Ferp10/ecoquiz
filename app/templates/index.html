@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoQuiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="/about">Sobre Nosotros</a>
+                <a href="/register">Registrarse</a>
+                <a href="/login">Iniciar Sesión</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>
+            Bienvenidos a EcoQuiz!
+        </h1>
+        <p>
+            "¡Bienvenido a nuestra trivia educativa sobre cómo 
+            podemos contribuir desde nuestros campos y en 
+            nuestros hogares al cuidado del medio ambiente! 
+            Más que un simple juego, esta plataforma es un 
+            método interactivo de enseñanza que explora 
+            prácticas sostenibles como la agricultura 
+            regenerativa, el manejo eficiente de recursos 
+            hídricos y la conservación de la biodiversidad en 
+            nuestros entornos rurales. Descubre cómo pequeños 
+            cambios pueden marcar una gran diferencia para un 
+            futuro más verde y sostenible."
+        </p>
+        <h2>
+            "Elige tu camino hacia un mundo más verde" 
+        </h2>
+        <p>
+            Explora nuestras categorías y aprende a 
+            hacer la diferencia desde hoy mismo.
+        </p>
+        <div class="categories">
+            <button onclick="redirectToQuiz('cuidado_ambiental')">Eco-Aventura: Técnicas para Mantener Nuestro Mundo Limpio y Verde/button>
+            <button onclick="redirectToQuiz('manejo_de_animales_y_tierras')">Eco-Defensores: Protección y Vitalidad de Animales y Tierras</button>
+            <button onclick="redirectToQuiz('ayuda_al_medio_ambiente')">Eco-Iniciativa: ¡Haz la Diferencia en tu Comunidad!</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>ECOQUIZ 2024</p>
+        <p>Todos los derechos reservados. ECOQUIZ TEAM.</p>
+    </footer>
+
+    <script>
+        function redirectToQuiz(category) {
+            window.location.href = `/quiz?category=${category}`;
+        }
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('responsive');
+        });
+    </script>
+</body>
+</html>
