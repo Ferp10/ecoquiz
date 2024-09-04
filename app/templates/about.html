@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="menu-container">
-        <div class="menu">
-            <div class="logo-container">
-                <a href="/">
-                    <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
-                </a>
-            </div>
-            <div class="nav-links" id="nav-links">
-                <a href="/register">Registrarse</a>
-                <a href="/login">Iniciar Sesión</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+      <div class="menu">
+        <div class="logo-container">
+          <a href="/">
+            <img
+              class="logo"
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt="Logo"
+            />
+          </a>
         </div>
+        <div class="nav-links" id="nav-links">
+          <a href="/register">Registrarse</a>
+          <a href="/login">Iniciar Sesión</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <h1>
-            Bienvenidos a EcoQuiz!
-        </h1>
-        <p>Estamos en modo turbo para que EcoQuiz esté listo.</p>
-        <P>¡Por ahora, estamos mas ocupados que una abeja en un campo de flores!</P>
-        <P>¡Volveremos pronto!</P>
+      <h1>Bienvenidos a EcoQuiz!</h1>
+      <p>Estamos en modo turbo para que EcoQuiz esté listo.</p>
+      <p>
+        ¡Por ahora, estamos mas ocupados que una abeja en un campo de flores!
+      </p>
+      <p>¡Volveremos pronto!</p>
     </div>
 
     <footer>
-        <p>ECOQUIZ 2024</p>
-        <p>Todos los derechos reservados. ECOQUIZ TEAM.</p>
+      <p>ECOQUIZ 2024</p>
+      <p>Todos los derechos reservados. ECOTEAM.</p>
     </footer>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('responsive');
-        });
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("responsive");
+      });
     </script>
-</body>
+  </body>
 </html>
