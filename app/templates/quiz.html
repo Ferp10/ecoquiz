@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="menu-container">
-        <div class="menu">
-            <div class="logo-container">
-                <a href="/">
-                    <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
-                </a>
-            </div>
-            <div class="nav-links" id="nav-links">
-                <a href="/about">Sobre Nosotros</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+      <div class="menu">
+        <div class="logo-container">
+          <a href="/">
+            <img
+              class="logo"
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt="Logo"
+            />
+          </a>
         </div>
+        <div class="nav-links" id="nav-links">
+          <a href="/about">Sobre Nosotros</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </div>
 
     <div class="container" id="question-container">
-        <!-- Aquí se cargarán las preguntas -->
+      <!-- Aquí se cargarán las preguntas -->
     </div>
 
     <footer>
-        <p>ECOQUIZ 2024</p>
-        <p>Todos los derechos reservados. ECOQUIZ TEAM.</p>
+      <p>ECOQUIZ 2024</p>
+      <p>Todos los derechos reservados. ECOTEAM.</p>
     </footer>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('responsive');
-        });
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("responsive");
+      });
     </script>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
+  </body>
 </html>

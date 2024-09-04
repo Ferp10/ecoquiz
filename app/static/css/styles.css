@@ -1,48 +1,44 @@
-/*
-paleta de colores color hunt
-#D6EFD8
-#80AF81
-#508D4E
-#1A5319
-*/
-
 /* Estilos generales */
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('../fonts/Orbitron.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../fonts/NerkoOne.ttf') format('truetype');
     font-style: normal;
+    font-weight: 800;
 }
 
-*{
+* {
     font-family: 'MyCustomFont', Arial, sans-serif;
-    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+    box-sizing: border-box;
 }
+
+
 
 body {
-    background: url('/static/img/background.png') no-repeat center center fixed;
+    background-color: #1E201E;
     background-size: cover;
     background-position: center;
     margin: 0;
-    padding: 0; 
-    color: #fff; /* Color de texto para el contenido */
+    padding: 0;
+    color: #fff;
 }
-
+/*estilos del contenido  principal de inicio y sobre nosotros*/
 .container {
-    max-width: 1280px;
-    margin: 100px  15px 20px; /* Margen añadido para separación del borde de la ventana */
+    max-width: 854px;
+    margin: 110px auto 20px;
     padding: 15px;
     background: transparent;
-    border: 4px solid rgba(255, 255, 255, 0.4);
+    border: 4px solid rgb(255, 255, 255);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
     border-radius: 15px;
     text-align: center;
+    font-weight: 800;
+    font-size: 30px;
 }
 
 h1 {
     text-align: center;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .categories {
@@ -53,9 +49,12 @@ h1 {
 .categories button {
     margin: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
-    background-color: #80AF81;
+    background-color: #3C3D37;
+    border: 4px solid rgba(255, 255, 255, 0.955);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
     color: #fff;
     border: none;
     border-radius: 15px;
@@ -63,7 +62,7 @@ h1 {
 }
 
 .categories button:hover {
-    background-color: #1A5319;
+    background-color: rgba(147, 6, 235, 0.3);
 }
 
 /* Estilos para el menú */
@@ -73,22 +72,22 @@ h1 {
     top: 0;
     left: 0;
     z-index: 1000;
-    
 }
 
 .menu {
-    max-width: 1280px;
-    margin: 0 15px;
+    font-size: 27px;
+    max-width: 854px;
+    margin: 10px auto 20px;
     padding: 15px 20px;
     background: transparent;
-    border: 4px solid rgba(255, 255, 255, 0.4);
+    border: 4px solid rgba(255, 255, 255, 0.959);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1001; /* Asegura que el menú quede encima del contenido */
+    z-index: 1001;
 }
 
 .menu .logo {
@@ -108,16 +107,16 @@ h1 {
 }
 
 .menu .nav-links a:hover {
-    border-bottom: double ;
-    color: #508d4e;
+    border-bottom: double;
+    color: rgba(147, 6, 235, 0.3);
 }
 
 /* Estilos para el menú hamburguesa */
 .hamburger {
-    display: none; /* Ocultar hamburguesa por defecto */
+    display: none;
     flex-direction: column;
     cursor: pointer;
-    z-index: 1002; /* Asegura que el icono hamburguesa quede encima del contenido */
+    z-index: 1002;
 }
 
 .hamburger div {
@@ -128,45 +127,17 @@ h1 {
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .menu {
-        padding: 15px 10px; /* Ajuste de padding para menú en dispositivos pequeños */
-    }
-
-    .menu .nav-links {
-        display: none; /* Ocultar enlaces del menú por defecto en dispositivos pequeños */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Ajuste para alinear debajo del menú fijo */
-        left: 0;
-        right: 0;
-        background-color: transparent;
-        border: 4px solid rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(20px);
-        box-shadow: 0 0 25px rgba(0, 0, 0, .3);
-        padding: 10px;
-        border-radius: 10px;
-        z-index: 1002;
-    }
-
-    .menu .nav-links.responsive {
-        display: flex; /* Mostrar enlaces del menú cuando se activa la clase responsive */
-        
-    }
-
-    .hamburger {
-        display: flex; /* Mostrar hamburguesa en dispositivos pequeños */
-    }
-
-    .menu-container {
-        padding: 0; /* Ajuste para dar espacio al contenido del menú */
-    }
+.hamburger:hover div {
+    background-color: rgba(147, 6, 235, 0.3);
 }
+
 
 #question-container {
     transition: background-color 0.3s ease;
     text-align: center;
     border-radius: 10px;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 /* Estilos para respuestas */
@@ -178,15 +149,24 @@ h1 {
 
 #choices button {
     margin: 10px;
-    padding: 15px 30px;
-    font-size: 18px;
+    font-size: 32px;
     cursor: pointer;
-    background-color: #bbbbbbbc;
     color: #fff;
     border: none;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #1E201E;
+    border: 4px solid rgba(255, 255, 255, 0.991);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+
+    width: 650px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #choices button:hover {
@@ -194,11 +174,11 @@ h1 {
 }
 
 #choices .correct {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50;
 }
 
 #choices .incorrect {
-    background-color: #f44336; /* Rojo */
+    background-color: #f44336;
 }
 
 #control-buttons {
@@ -209,9 +189,12 @@ h1 {
 
 #exit-button, #select-category-button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 30px;
     cursor: pointer;
-    background-color: #80AF81;
+    background-color: #3C3D37;
+    border: 4px solid rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -219,27 +202,30 @@ h1 {
 }
 
 #exit-button:hover, #select-category-button:hover {
-    background-color: #1A5319;
+    background-color: rgba(147, 6, 235, 0.3);
 }
 
-/* Estilos para página de login */
-.wrapper{
+/* Estilos para página de login y registrate */
+.wrapper {
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
-    border: 4px solid rgba(255, 255, 255, 0.4);
+    border: 4px solid rgba(255, 255, 255, 0.973);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 25px rgba(0, 0, 0, .3);
-    margin: 100px 15px 20px; 
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
+    margin: 110px auto 20px;
     padding: 10px;
-    max-width: 1280px; /* Ancho máximo para la caja del formulario */
+    max-width: 854px;
     border-radius: 20px;
+    font-weight: 800;
+    font-size: 26px;
 }
 
 form {
     width: 100%;
+    text-align: center;
 }
 
 .input-box {
@@ -250,12 +236,29 @@ form {
 .input-box input {
     width: 100%;
     padding: 10px;
-    padding-right: 40px; /* Espacio para el icono */
+    padding-right: 40px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     background: transparent;
     color: #fff;
+    font-size: 32px;
+}
+
+.btn {
+    align-items: center;
+    margin: 35px 15px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer; 
+    
+}
+
+.btn:hover, .forgot-password:hover, .register:hover {
+    background-color: #9306eb; /* Fondo morado */
+    color: white; /* Texto blanco */
 }
 
 .input-box i {
@@ -263,112 +266,128 @@ form {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #80AF81;
+    color:  #9606eb;
 }
 
-.input-box input::placeholder{
+
+.input-box input::placeholder {
     color: #fff;
 }
 
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    font-size: 14.5;
-    margin: -15px 0 15px;
-}
-
-.remember-forgot a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.remember-forgot a:hover {
-    color: #508D4E;
-}
-
-.remember-forgot label input{
-    accent-color: #508d4e;
-    margin-right: 3px;
-}
-
-.btn {
-    width: auto; /* Cambia el ancho para que se ajuste al contenido */
-    max-width: 300px; /* Ajusta el ancho máximo del botón */
-    padding: 10px 80px; /* Ajusta el padding para mejor apariencia */
-    border: none;
-    border-radius: 35px;
-    background-color: #fff;
-    color: #333;
     font-size: 20px;
+}
+
+.remember-forgot label input {
+    accent-color: #9606eb;
+    margin-right: 5px;
+}
+
+button.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9606eb;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: block; /* Asegura que el botón sea un bloque para usar margin auto */
-    margin: 0 auto; /* Centra el botón horizontalmente */
+    font-size: 30px;
 }
 
-
-.btn:hover {
-    background-color: #80AF81;
+button.login-btn:hover {
+    background-color: #9606eb;;
 }
 
-.register-link {
+/*estillos del pie de pagina*/
+footer {
+    max-width: 854px;
+    margin:15px auto 10px;
+    padding: 0;
+    background: transparent;
+    border: 4px solid rgba(255, 255, 255, 0.955);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
     text-align: center;
-    margin-top: 20px;
+    flex-direction: column;
+    line-height: 0;
 }
 
-.register-link a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.register-link a:hover {
-    color: #508D4E;
-}
-
+/*estilos para dispositivos mobiles*/
 @media (max-width: 768px) {
-    .wrapper {
-        margin: 100px 15px 25px; /* Reducir margen en dispositivos pequeños */
-        padding: 15px;
+    .menu {
+        margin: 5px 20px;
+        padding: 15px 15px;
     }
 
     .menu .nav-links {
-        top: 60px; /* Ajuste para alinear debajo del menú fijo */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        background-color: #1E201E;
+        border: 4px solid rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
+        padding: 10px;
+        margin-left: 45%;
+        border-radius: 10px;
+        z-index: 1002;
+        align-items: center;
     }
-}
 
-/* Estilos para el pie de página */
-footer {
-    width: calc(100% - 30px); /* Asegura que el pie de página tenga un margen lateral consistente */
-    background-color: transparent; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 4px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 25px rgba(0, 0, 0, .3);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-    margin: 0 15px 15px;
-    margin-top: 20px;
-    text-align: center; /* Asegura que el texto esté centrado */
-    flex-direction: column; /* Asegura que los textos estén uno encima del otro */
-}
+    .menu .nav-links.responsive {
+        display: flex;
+    }
 
-footer p {
-    margin: 5px 0; /* Espacio entre los textos */
-}
+    .hamburger {
+        display: flex;
+    }
 
+    .menu-container {
+        padding: 0;
+    }
 
-@media (max-width: 768px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .categories button {
+        margin-top: 20px;
+    }
+
+    #choices button {
+        width: 90% !important;
+        height: auto !important;
+        font-size: 24px !important;
+        padding: 10px !important;
+    }
+
+    .wrapper {
+        margin: 110px 0 25px;
+        padding: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .input-box input {
+        font-size: 26px;
+    }
+
     footer {
+        margin: 5px 20px;
         flex-direction: column;
         text-align: center;
-        
+        line-height: 0;
     }
 }
