@@ -33,13 +33,68 @@ body {
     border-radius: 15px;
     text-align: center;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 h1 {
     text-align: center;
     font-weight: 400;
+    border-bottom: solid;
 }
+
+h2 {
+    border-top: solid;
+    margin-top: 5px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.info-box {
+    width: 45%;
+    background: transparent;
+    border: 4px solid rgba(255, 255, 255, 0.955);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+}
+
+.mission {
+    border-left: 4px solid #fff;
+}
+
+.vision {
+    border-right: 4px solid #fff;
+}
+
+.objectives {
+    width: 100%;
+    background: transparent;
+    border: 4px solid rgba(255, 255, 255, 0.955);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.objectives ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+}
+
 
 .categories {
     margin-bottom: 20px;
@@ -48,7 +103,7 @@ h1 {
 
 .categories button {
     margin: 5px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 25px;
     cursor: pointer;
     background-color: #3C3D37;
@@ -136,8 +191,8 @@ h1 {
     transition: background-color 0.3s ease;
     text-align: center;
     border-radius: 10px;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 /* Estilos para respuestas */
@@ -188,7 +243,7 @@ h1 {
 }
 
 #exit-button, #select-category-button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 30px;
     cursor: pointer;
     background-color: #3C3D37;
@@ -247,7 +302,7 @@ form {
 
 .btn {
     align-items: center;
-    margin: 35px 15px 0;
+    margin: 15px 15px 0;
     padding: 10px 20px;
     font-size: 24px;
     border-radius: 10px;
@@ -294,37 +349,38 @@ button.login-btn {
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 button.login-btn:hover {
     background-color: #9606eb;;
 }
 
+
 /*estillos del pie de pagina*/
 footer {
     max-width: 854px;
-    margin:15px auto 10px;
+    margin:15px auto 15px;
     padding: 0;
     background: transparent;
     border: 4px solid rgba(255, 255, 255, 0.955);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
     border-radius: 15px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
     text-align: center;
     flex-direction: column;
-    line-height: 0;
+    line-height: 0.8;
 }
 
 /*estilos para dispositivos mobiles*/
 @media (max-width: 768px) {
     .menu {
-        margin: 5px 20px;
+        margin: 10px 20px;
         padding: 15px 15px;
+        font-size: 18px;
     }
 
     .menu .nav-links {
@@ -335,11 +391,11 @@ footer {
         left: 0;
         right: 0;
         background-color: #1E201E;
-        border: 4px solid rgba(255, 255, 255, 0.4);
+        border: 4px solid rgb(255, 255, 255);
         backdrop-filter: blur(20px);
         box-shadow: 0 0 15px rgba(147, 6, 235, 0.3);
         padding: 10px;
-        margin-left: 45%;
+        margin-left: 55%;
         border-radius: 10px;
         z-index: 1002;
         align-items: center;
@@ -360,17 +416,28 @@ footer {
     .container {
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 18px;
+    }
+
+
+    #question-container{
+        font-size: 16px;
+    }
+
+    #exit-button, #select-category-button{
+        font-size: 16px;
     }
 
     .categories button {
         margin-top: 20px;
+        font-size: 16px;
     }
 
     #choices button {
         width: 90% !important;
         height: auto !important;
-        font-size: 24px !important;
-        padding: 10px !important;
+        font-size: 20px !important;
+        padding: 5px !important;
     }
 
     .wrapper {
@@ -378,16 +445,31 @@ footer {
         padding: 15px;
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 20px;
     }
 
+
     .input-box input {
-        font-size: 26px;
+        font-size: 18px;
+    }
+
+    .eco-test {
+        font-size: 16px;
+        
+    }
+
+    .eco-btn {
+        font-size: 18px;
+    }
+
+    .info-container {
+        font-size: 18px;
     }
 
     footer {
-        margin: 5px 20px;
-        flex-direction: column;
+        margin: 0 20px 10px;
+        flex-direction: column-reverse;
         text-align: center;
-        line-height: 0;
+        font-size: 16px;    
     }
 }
