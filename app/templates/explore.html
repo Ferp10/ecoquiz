@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorar Quizzes</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <style>
+      /* Estilos adicionales para las respuestas correctas e incorrectas */
+
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn {
+        background-color: #3c3d37;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      /* Estilo de vibración para botones interactivos */
+      .btn:hover {
+        background-color: #3c3d37;
+        animation: vibrate 0.2s;
+      }
+
+      @keyframes vibrate {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-2px);
+        }
+        50% {
+          transform: translateX(2px);
+        }
+        75% {
+          transform: translateX(-1px);
+        }
+      }
+
+      .btn.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+      #question-container .btn.correct {
+        background-color: green;
+        color: white;
+      }
+
+      #question-container .btn.incorrect {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="menu">
+        <div class="logo-container">
+          <a href="/">
+            <img
+              class="logo"
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="/about">Sobre Nosotros</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="question-container">
+      <!-- Preguntas serán cargadas aquí -->
+    </div>
+
+    <div id="result-container"></div>
+
+    <footer>
+      <p>ECOQUIZ 2024</p>
+      <p>Todos los derechos reservados. ECOTEAM.</p>
+    </footer>
+
+    <script>
+      // Función para decodificar entidades HTML
+      function decodeHTML(html) {
+        const txt = document.createElement("textarea");
+        txt.innerHTML = html;
+        return txt.value;
+      }
+
+      // Función para mezclar un array
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      // Función para mostrar preguntas
+      function showQuestions(questions) {
+        console.log("Showing questions:", questions);
+        let currentQuestionIndex = 0;
+        let correctAnswers = 0;
+        const totalQuestions = questions.length;
+
+        function showQuestion() {
+          if (currentQuestionIndex >= questions.length) {
+            showResults();
+            return;
+          }
+
+          const question = questions[currentQuestionIndex];
+          console.log(
+            `Displaying question ${currentQuestionIndex + 1}:`,
+            question
+          );
+
+          const choicesContainer = document.createElement("div");
+          choicesContainer.classList.add("btn-container");
+
+          question.choices.forEach((choice) => {
+            const button = document.createElement("button");
+            button.textContent = decodeHTML(choice);
+            button.classList.add("btn");
+            button.onclick = () =>
+              selectAnswer(button, choice, question.answer);
+            choicesContainer.appendChild(button);
+          });
+
+          document.getElementById("question-container").innerHTML = `
+                    <h2>${decodeHTML(question.question)}</h2>
+                `;
+          document
+            .getElementById("question-container")
+            .appendChild(choicesContainer);
+        }
+
+        function selectAnswer(button, choice, correctAnswer) {
+          console.log(
+            `Selected answer: ${choice} | Correct answer: ${correctAnswer}`
+          );
+          if (choice === correctAnswer) {
+            button.classList.add("correct");
+            correctAnswers++;
+            console.log("Respuesta correcta.");
+          } else {
+            button.classList.add("incorrect");
+            // Mostrar la respuesta correcta
+            const buttons = document.querySelectorAll(".btn");
+            buttons.forEach((btn) => {
+              if (btn.textContent === decodeHTML(correctAnswer)) {
+                btn.classList.add("correct");
+              }
+            });
+            console.log("Respuesta incorrecta.");
+          }
+
+          // Deshabilitar todos los botones
+          document.querySelectorAll(".btn").forEach((btn) => {
+            btn.classList.add("disabled");
+            btn.disabled = true; // Deshabilita el botón
+          });
+
+          // Pasar a la siguiente pregunta después de 3 segundos
+          setTimeout(() => {
+            currentQuestionIndex++;
+            showQuestion();
+          }, 3000); // 3000 milisegundos = 3 segundos
+        }
+
+        function showResults() {
+          console.log("Showing results.");
+          const percentage = (correctAnswers / totalQuestions) * 100;
+          document.getElementById("question-container").innerHTML = `
+                    <h2>¡Has completado la trivia!</h2>
+                    <p>Respuestas correctas: ${correctAnswers}</p>
+                    <p>Respuestas incorrectas: ${
+                      totalQuestions - correctAnswers
+                    }</p>
+                    <p>Porcentaje de respuestas correctas: ${percentage.toFixed(
+                      0
+                    )}%</p>
+                    <div id="control-buttons">
+                        <button id="select-category-button" class="btn">Seleccionar Categoría</button>
+                        <button id="exit-button" class="btn">Salir</button>
+                    </div>
+                `;
+
+          document.getElementById("select-category-button").onclick = () => {
+            window.location.href = "/";
+          };
+
+          document.getElementById("exit-button").onclick = () => {
+            window.location.href = "/";
+          };
+        }
+
+        showQuestion();
+      }
+
+      // Función para cargar preguntas desde la API
+      function fetchQuestionsFromAPI() {
+        fetch("/api/open_trivia/questions")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Error al cargar preguntas de la API");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            if (data.response_code !== 0) {
+              throw new Error("Error en la respuesta de la API");
+            }
+            // Mapear las preguntas al formato esperado
+            const questions = data.results.map((q) => ({
+              question: q.question,
+              choices: shuffleArray([q.correct_answer, ...q.incorrect_answers]),
+              answer: q.correct_answer,
+            }));
+            console.log("Questions fetched successfully:", questions);
+            showQuestions(questions);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            const questionsDiv = document.getElementById("question-container");
+            questionsDiv.innerHTML = `<p style="color: red;">${error.message}</p>`; // Mostrar mensaje de error
+          });
+      }
+
+      // Cargar las preguntas cuando la página cargue
+      document.addEventListener("DOMContentLoaded", () => {
+        fetchQuestionsFromAPI();
+      });
+
+      // Menú hamburguesa
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("responsive");
+      });
+    </script>
+  </body>
+</html>
